@@ -1,0 +1,44 @@
+/*
+GitHub: https://github.com/shashank-3/javascript-digital-clock
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#MyClockDisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-size: 80px;
+    padding: 0px 5px 0px 5px;
+}
+
+@keyframes flash {
+
+    from {
+      text-shadow:
+      0 0 5px #fc0303, 0 0 10px #fc0303,
+      0 0 20px #fc0303, 0 0 40px #fc0303;
+    }
+
+    to {
+      text-shadow:
+      0 0 5px #03cafc, 0 0 10px #03cafc,
+      0 0 20px #03cafc, 0 0 40px #03cafc;
+    }
+  }
+  .fglow { animation: flash 10s ease infinite alternate; }
+
+#DateDay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 5px 0px 5px;
+}
